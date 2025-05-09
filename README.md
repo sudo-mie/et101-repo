@@ -30,7 +30,7 @@ Do you think we should reply what we discussed yesterday?
 
 On that day, LION primary exchange was changed several times LION.N -> LION.OQ -> LION.N -> LION.OQ -> LION.N
 
-The order has volume aggregator registered to ric LION.N's container. But at that time, LION.OQ is the correct ric to use for LION from TickRecorder to receive MOOP updates. So the order with LION.N is not receiving any volume updates. As a result, has 0 tpc and 0 target qty. When LION.OQ -> LION.N, a new container is created instead of the original one order regsitered to, so still no volume updates.
+The order has volume aggregator registered to ric LION.N's container. But at that time, LION.OQ is the correct ric to use for LION from TickRecorder to receive MOOP updates. So the order with LION.N is not receiving any volume updates. As a result, has 0 tpc and 0 target qty. Even when LION.OQ -> LION.N, a new container is created instead of the original one order regsitered to, so still no volume updates.
 
 We think this happened due to LION's primary exchange changed back and forth in the same day. 
 
