@@ -1,11 +1,17 @@
 # et101-repo
 
 
+Hi S,
 
-### 05/21
+Thanks for the update, good to know that the case is being worked on! Could you provide an estimated time for when the extension will be filed?
 
-If we don't cache, the value used by feature calculation would be getInterpolatedLookBackValueFromNow(time_of_calculation) and the journal value will be getInterpolatedLookBackValueFromNow(time_of_journal).
-Even though in the same evaluation, the time_of_calculation and time_of_journal may be different, and thus may have different value? I think ideally we should journal exactly the value we used in volume surprise calculation.
+For context, I submitted the questionnaire and required documents early this year, well before the current busy period. Also my colleague, who is my peer and has the same H-1B expiration date, has already had their extension filed, so it seems my case has been delayed for some time now.
+
+I’d really appreciate any visibility you can provide on the expected filing date.
+
+Thanks,
+
+
 
 
 
