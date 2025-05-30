@@ -1,16 +1,13 @@
 # et101-repo
 
 
-Hi S,
+I also backtested this order on my end, I think I can repro the issue. Both tpc and target are different from bop and storyboard
 
-Thanks for the update, good to know that the case is being worked on! Could you provide an estimated time for when the extension will be filed?
+I was not able to load this model file for permission issue, I used the old model file
 
-For context, I submitted the questionnaire and required documents early this year, well before the current busy period. Also my colleague, who is my peer and has the same H-1B expiration date, has already had their extension filed, so it seems my case has been delayed for some time now.
+I also tried to print the values (adding the `System.out.println`) into a csv. I think the printed value align with the value in BOP
 
-I’d really appreciate any visibility you can provide on the expected filing date.
-
-Thanks,
-
+We've been using the printed values for previous lgbm backtest, I think it should be reliable?
 
 
 
