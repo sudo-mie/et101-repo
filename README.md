@@ -1,6 +1,8 @@
 # et101-repo
 
-No we are using (CumVolVwapElig_current - CumVolVwapElig_OnArrivalOrRedraw)/hist to calculate this. The CumVolVwapElig_OnArrivalOrRedraw is saved in execution schedule data on order arrival/amend/redraw
 
+Hi 
 
+Just want to check more on how to local backtest a QA order. So after manually construct the order csv, then should I just use the backtester as usual? I think maybe need to overwrite the remote file fetch location to qa instead of prod?
 
+Any other changes that you think I need to make
