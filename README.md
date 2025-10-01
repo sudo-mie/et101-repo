@@ -1,20 +1,7 @@
 # et101-repo
 
 
-1. line 22
+Actually for parentQty, instead of hardcode as a constant, you can direct extract from the parentOrder.
 
-Better to rename it as arrivalPrice to be clear?
-
-2. line 25
-
-The get target price part is the same as else, I think it is cleaner to write as `if (effectiveTime <= continuousStartTime && PriceUtil.isPriceValid(open)) {arrival = open} else {arrival = getTargetPrice(...)} 
-
-3. line 47
-
-Use double //?
-
-4. line 69
-  
-Would it be better to rename as usePriceWithFallback?
-
+E.g. final int parentQty = AreAlgoVerifierTableJoiner.getParentOrderInputTable(context).get(0).getValue(SIZE);
 
