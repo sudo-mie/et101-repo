@@ -1,21 +1,19 @@
 
 
-### Muse Signal Frequency and Latency Questions
+### Muse Signal Frequency Update - Impact on Wasp
 
-Hi [Name],
+Hi Rajesh,
 
-We’re reaching out regarding a few observations about Muse signals on a recent order. In Wasp, we rely on muse signals for volume counting on several flows, such as the gamma model and VWAP LightGBM TPC calculation.
+We've been discussing with the Muse team regarding the update frequency of Muse signals, and we'd like some input from tech team before proceeding. 
 
-Recently, on an order (todo: orderId, date), we noticed that at a given timestamp, there was a significant discrepancy between Muse signals’s cumVolVwapElig and Wasp’s eligVol, which was unexpected. Upon closer inspection, it appears that the Muse signal had a few seconds of delay, as the values aligned closely again after few seconds.
+Currently, Muse signals (e.g. vwapEligVol for volume counting) seem to refresh every 5 seconds, which explains some short-term discrepancies we observed against Wasp’s eligibleVol.
 
-In addition, we checked the BOP records (see attached screenshot), the calcTime for Muse signals seems to update only about every 5 seconds. This 5-second frequency is much slower than we expected. 
+Updating every 5-second is much slower than we expected, and looking to see if we can increase the frequency. If the Muse team increase the update frequency (e.g. from 5 seconds to 1 second), do you know if there would be any potential impact on the Wasp side? Or if you know any related insight on the connection between muse and wasp.
 
-Could you please confirm, is the 5-second the actual update frequency? How is this determined, and could there be any latency issues that might explain this delay? We'd greatly appreciate your help investigating this issue. Please feel free to let me know if you need any additional information.
+Appreciate any input from your side. Feel free to check the attached email thread for full context, and let me know if you have any question.
 
-[add screenshot]
-
-Best,
-
+Thanks,
+Situ
 
 
 
