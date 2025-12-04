@@ -1,3 +1,15 @@
-Send VWAP orders with Quantum enabled. Add a max participation rate on order and enable close auction.
-- Send orders with customization XXXX
-- Send orders without customization XXXX 
+QuantumSchedulerTest
+
+update scheduledQuantums.add(1, expireTimeEpoch1) to
+
+```
+scheduledQuantums.getSchduledQuantumsCollection().addId(1);
+scheduledQuantums.getSchduledQuantumsCollection().addExpireTime(expireTimeEpoch1);
+```
+
+e.g. for order 2
+
+```
+scheduledQuantums.getSchduledQuantumsCollection().addId(2);
+scheduledQuantums.getSchduledQuantumsCollection().addExpireTime(expireTimeEpoch2);
+```
