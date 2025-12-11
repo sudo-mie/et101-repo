@@ -20,7 +20,7 @@ long getQty(long id);
 
 ```
 @Override
-public list[] getQuantumIds() {
+public long[] getQuantumIds() {
     return this.quantumIds.stream().mapToLong(Long::longValue).toArray();
 }
 
@@ -40,7 +40,7 @@ public long getQty(long id) {
 ```
 private void updateScheduledQuantumCollection(ScheduledQuantums scheduledQuantums) {
     scheduledQuantumCollection.reset();
-    final list[] quantumIds = scheduledQuantums.getQuantumIds();
+    final long[] quantumIds = scheduledQuantums.getQuantumIds();
     for (int i = 0; i < quantumIds.length; i++) {
         final long quantumId = quantumIds[i];
         scheduledQuantumCollection.addId(quantumId);
@@ -65,7 +65,7 @@ line 45, update function
 
 ```
 private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedQtys) {
-    final list[] quantumIds = scheduledQuantums.getQuantumIds();
+    final long[] quantumIds = scheduledQuantums.getQuantumIds();
     int quantumCount = quantumIds.length;
     long[] outputQtys = new long[quantumCount];
 
@@ -81,7 +81,7 @@ private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedQ
 line 56, update function
 ```
 private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedQtys, long[] expectedExpireTimes) {
-    final list[] quantumIds = scheduledQuantums.getQuantumIds();
+    final long[] quantumIds = scheduledQuantums.getQuantumIds();
     int quantumCount = quantumIds.length;
     long[] outputQtys = new long[quantumCount];
     long[] outputExpireTimes = new long[quantumCount];
@@ -99,7 +99,7 @@ private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedQ
 line 70, update function
 ```
 private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedIds, long[] expectedQtys, long[] expectedExpireTimes) {
-    final list[] quantumIds = scheduledQuantums.getQuantumIds();
+    final long[] quantumIds = scheduledQuantums.getQuantumIds();
     int quantumCount = quantumIds.length;
     long[] outputQtys = new long[quantumCount];
     long[] outputExpireTimes = new long[quantumCount];
