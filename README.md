@@ -121,7 +121,7 @@ Then, for each function, update `verifyResults`'s first argument from `scheduled
 
 6. !!Do this as the last step!! Create an interface for QuantumSchedulerResult
 
-   - run refactor on class `QuantumSchedulerResult` (QuantumSchedulerResult.java line 5), rename it to `QuantumSchedulerResultImpl`
+   - **manually, do NOT use refactor:** rename class `QuantumSchedulerResult` (QuantumSchedulerResult.java line 5) to `QuantumSchedulerResultImpl`; update line 12, line 17 to `QuantumSchedulerResultImpl` as well
    - rename filename - QuantumSchedulerResult.java to QuantumSchedulerResultImpl.java
    - in QuantumSchedulerResultImpl.java, rename line 49 `return "QuantumSchedulerResult {"` -> `return "QuantumSchedulerResultImpl {"`
    - add a new "interface" in the same folder, name it as `QuantumSchedulerResult`
@@ -142,6 +142,8 @@ Then, for each function, update `verifyResults`'s first argument from `scheduled
   - update in QuantumSchedulerResultImpl.java
     - remove line 7 ~~public static QuantumSchedulerResult UNINITIALIZED = new QuantumSchedulerResult(new ScheduledQuantumImpl, 0);~~
     - add `@Override` decorator to `getScheduledQuantums()` and `getQuantumSize()` and `copy()` functions
-    - Make sure copy() is returning QuantumSchedulerResult, not QuantumSchedulerResultImpl - `public QuantumSchedulerResult copy() {`
+  - update QuantumSchedulerImpl.java, line 108 - `return new QuantumSchedulerResultImpl(quantums, quantumUnit);`
+  - update MockQuantumScheduler.java, line 25 - `return new QuantumSchedulerResultImpl(quantums, 0);`
+
 
 
