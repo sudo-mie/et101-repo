@@ -117,3 +117,31 @@ private void verifyResults(ScheduledQuantums scheduledQuantums, long[] expectedI
 
 Then, for each function, update `verifyResults`'s first argument from `scheduledQuantums.getScheduledQuantumCollection()` to `scheduledQuantums` or `scheduledQuantumOutput.getScheduledQuantums()`
 
+
+
+6. !!Do this as the last step!! Create an interface for QuantumSchedulerResult
+
+   - run refactor on class `QuantumSchedulerResult` (QuantumSchedulerResult.java line 5), rename it to `QuantumSchedulerResultImpl`
+   - rename filename - QuantumSchedulerResult.java to QuantumSchedulerResultImpl.java
+   - in QuantumSchedulerResultImpl.java, rename line 49 `return "QuantumSchedulerResult {"` -> `return "QuantumSchedulerResultImpl {"`
+   - add a new "interface" in the same folder, name it as `QuantumSchedulerResult`
+
+     ```
+     package xxx
+     
+     public interface QuantumSchedulerResult {
+         QuantumSchedulerResult UNINITIALIZED = new QuantumSchedulerResult(new ScheduledQuantumImpl, 0);
+
+         ScheduledQuantums getScheduledQuantums();
+
+         long getQuantumSize();
+
+         QuantumSchedulerResult copy()
+     }
+     ```
+  - update in QuantumSchedulerResultImpl.java
+    - remove line 7 ~~public static QuantumSchedulerResult UNINITIALIZED = new QuantumSchedulerResult(new ScheduledQuantumImpl, 0);~~
+    - add `@Override` decorator to `getScheduledQuantums()` and `getQuantumSize()` and `copy()` functions
+    - Make sure copy() is returning QuantumSchedulerResult, not QuantumSchedulerResultImpl - `public QuantumSchedulerResult copy() {`
+
+
