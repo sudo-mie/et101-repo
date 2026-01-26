@@ -6,12 +6,9 @@
 4. Role: help build our tool in schedule optimization. 5 years model. Built quick. Want to improve now. Collaboration with other team as well. Value: coding, quant research, experience with production system, collaboration (communication art with external team)
 5. What do you think should be done, if you were to build this schedule optimization system? What are some important components/considerations?
 6. You have a portfolio to trade. The portfolio rebalance every couple hours. Goal of the firm is to maximize our pnl. And it is a satirical arbitrage portfolio. Let’s say we trade five day reversion, every day, look at five day reversion and decide to trade on that signal. This is the portfolio. Then what do you think would be the execution objective should be designed so that it matches the overall pnl improvement
-7. If rhe market impact model says it is creating too much impact, you should tell them to trade less? Is it the feedback you are looking for?
-8. How do we connection our execution to the overall goal of having more PNL?
-9. Why do think minimizing slippage is maximizing PNL?
-10. What should be the metrics? Arrival?
-11. If I’m trading pattern like a Ponzi schema, just infinitely size it up? Arrival slippage is low, but good PnL. It is contradicting?
-12. Given me a counter argument? Like more impact is wrong because XYZ
+7. If the market impact model says it is creating too much impact, you should tell them to trade less? Is it the feedback you are looking for?
+8. How do we connect our execution to the overall goal of having more PNL? Why do you think minimizing slippage is maximizing PNL? What should be the metrics? Arrival?
+11. If I’m trading pattern like a Ponzi schema (just infinitely size it up): arrival slippage is low, but good PnL. They are contradicting, right? Give me a counter argument? Like more impact is wrong because XYZ
 13. How do you construct a proper measure in terms of execution?
 14. Have you get any exposure to the propagator model? Can you tell me more?
 15. LGBM, do you code it up, the solver? or use existing solver? Have you had experience with optimizers?
@@ -21,8 +18,8 @@
 19. Instance A and B. A bunch of order going though both. We assume delta being, on average, you’ll have 9bps; for B, you are expecting 8bps. Your std deviation for both daily symbols is 2%. And we want to gain 90% confidence. Receiving 1000 orders a day. On 200 symbols. Give me some rule of thumbs. E.g. if this number changed from 200 to 500, what is the effect; or this changed from 1000 to 100, what is the effect. How long does it take to converge? Make any assumptions. 
 20. Expected difference is 1bps. For now we just want to know it is significantly larger than 0 or not. 
 21. Quick following up on variance. If variant not 2% is 3%, how much longer would it take?
-22. Do you know the form of t test? You have a variable X, you are doing t test on X, what are you computing? How do we know its significantly difference?
-23. Why t test works? What’s the Theorem behind it? Do you know law of large numbers?
+22. Do you know the form of t-test? You have a variable X, you are doing t-test on X, what are you computing? How do we know its significantly difference?
+23. Why t-test works? What’s the Theorem behind it? Do you know law of large numbers?
 
 
 ## J.2
