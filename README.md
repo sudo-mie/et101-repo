@@ -19,5 +19,5 @@ Where the multiplier is defined by ContinuousVolumeToAuctionMultiplier [@strateg
 Find section "#### Closing Auction quantity estimation", and add one sentence to the end of first paragraph:
 
 ```
-......This forcast of \\(contVolForecast\\) uses the gamma model. /* Add this: */ Then, the ContinuousVolumeToAuctionMultiplier [@strategy parameter] is applied on the \\(contVolForecast\\) to adjust it
+......This forcast of \\(contVolForecast\\) uses the gamma model. /* ADD THIS */ Then, the ContinuousVolumeToAuctionMultiplier [@strategy parameter] is applied on the \\(contVolForecast\\) to adjust it
 ```
