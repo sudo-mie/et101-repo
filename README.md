@@ -1,9 +1,1 @@
-Checked with tests, currently in prod mid-peg ping is using the signal-adjusted price. Confirmed with Song, we'd like to leave it for now. Created a new jira to track and re-visit in the future.
-
-
-
-
-
----
-
-Subject: Re-visit adjusting pegged ping price with EPS
+I’ve really enjoyed working with all of you, and I’m very grateful to have been part of the team these past few years. I’ll be around for another two weeks, so please feel free to let me know if there’s anything I can help with. I’ll definitely miss the team.
